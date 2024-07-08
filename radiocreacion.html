@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Interactive Radio Station</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        #home {
+            text-align: center;
+        }
+        #listen iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .recent-tracks {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .track {
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #ffcc00;
+        }
+        .social-media-icons img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        .social-media-icons img:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .blog-post {
+            width: 45%;
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .blog-post:hover {
+            background-color: #ffcc00;
+        }
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to Your Interactive Radio Station</h1>
+<p>Streaming the best music 24/7</p>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#listen">Listen Live</a>
+<a href="#contact">Contact Us</a>
+<a href="#blog">Blog</a>
+</nav>
+ 
+    <main>
+<section id="home">
+<h2>Live Radio Stream</h2>
+<p>Player will go here</p>
+</section>
+ 
+        <section id="about">
+<h2>About Us</h2>
+<p>Station history and mission vision content goes here</p>
+</section>
+ 
+        <section id="listen">
+<h2>Listen Live</h2>
+<iframe src="https://player.example.com"></iframe>
+<h3>Recently Played Tracks</h3>
+<div class="recent-tracks">
+<div class="track">
+<p>Track 1</p>
+</div>
+<div class="track">
+<p>Track 2</p>
+</div>
+<div class="track">
+<p>Track 3</p>
+</div>
+</div>
+</section>
+ 
+        <section id="contact">
+<h2>Contact Us</h2>
+<form class="contact-form">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+<input type="submit" value="Submit">
+</form>
+<div class="social-media-icons">
+<img src="facebook-icon.png" alt="Facebook">
+<img src="twitter-icon.png" alt="Twitter">
+<img src="instagram-icon.png" alt="Instagram">
+</div>
+<p>Address: 123 Radio St, Music City</p>
+<p>Phone: (123) 456-7890</p>
+</section>
+ 
+        <section id="blog">
+<h2>Blog</h2>
+<div class="blog-posts">
+<div class="blog-post">
+<h3>Blog Post 1</h3>
+<p>Excerpt of blog post 1...</p>
+</div>
+<div class="blog-post">
+<h3>Blog Post 2</h3>
+<p>Excerpt of blog post 2...</p>
+</div>
+</div>
+</section>
+</main>
+ 
+    <footer>
+<p>&copy; 2024 Your Radio Station. All rights reserved.</p>
+</footer>
+</body>
+</html>
